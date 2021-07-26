@@ -4,7 +4,7 @@
 <mapper namespace="guestbook">
 
 	<!-- 방명록 리스트 -->
-	<select id="getList" resultType="com.javaex.vo.GuestbookVo">
+	<select id="getList" resultType="guestVo">
 	<![CDATA[
 		SELECT
 	    	no,
@@ -18,7 +18,7 @@
 	</select>
 
 	<!-- 방명록 등록 -->
-	<insert id="insert" parameterType="com.javaex.vo.GuestbookVo">
+	<insert id="insert" parameterType="guestVo">
 	<![CDATA[
 		INSERT INTO guestbook VALUES (
 	    	seq_guestbook_no.NEXTVAL,
@@ -31,7 +31,7 @@
 	</insert>
 
 	<!-- 방명록 삭제 -->
-	<delete id="delete" parameterType="com.javaex.vo.GuestbookVo">
+	<delete id="delete" parameterType="guestVo">
 	<![CDATA[
 		DELETE FROM guestbook
 		WHERE
