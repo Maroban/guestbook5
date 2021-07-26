@@ -37,7 +37,7 @@ public class GuestController {
 		model.addAttribute("gList", gList);
 
 		// addList.jsp 포워드
-		return "/WEB-INF/views/addList.jsp";
+		return "addList";
 	}
 
 	/*** add ***/
@@ -59,7 +59,7 @@ public class GuestController {
 		model.addAttribute("no", no);
 
 		// deleteForm.jsp 포워드
-		return "/WEB-INF/views/deleteForm.jsp";
+		return "deleteForm";
 	}
 
 	/*** delete ***/
